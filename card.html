@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Happy Birthday & Love Proposal - Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    /* Style for the card page */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      color: #ff69b4;
+    }
+    p {
+      font-size: 20px;
+      color: #333;
+      max-width: 600px;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #ff69b4;
+    }
+
+    /* Custom back button design */
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #ff1493;
+    }
+
+    .back-button::before {
+      content: '❤';
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .back-button::after {
+      content: '❤';
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Will You Marry Me? 💍</h1>
+    </header>
+    
+    <section class="wish-message">
+      <p>On this special day, as we celebrate your life, I want to ask if you will share the rest of it with me. Happy Birthday, my love, and here's to a future together filled with joy, laughter, and endless love. 💖</p>
+    </section>
+
+    <section class="image-section">
+      <img src="your-image.jpg" alt="Proposal Scene" class="responsive-img">
+    </section>
+
+    <footer>
+      <p>All my love, today and always. 💞</p>
+      <a href="index.html" class="back-button">Go Back</a>
+    </footer>
+  </div>
+</body>
+</html>

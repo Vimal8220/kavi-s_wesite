@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Welcome to the Birthday Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Index Page -->
+  <div class="container" id="index-page">
+    <!-- Balloons will be floating here -->
+    <div class="balloons">
+      <div class="balloon balloon1"></div>
+      <div class="balloon balloon2"></div>
+      <div class="balloon balloon3"></div>
+    </div>
+    
+    <h1 class="glow-text">Hlooo.... Enna dii panraa ˚˖𓍢ִ໋🌷͙֒✧🩷˚.🎀༘⋆</h1>
+    <p>Enmellaa sema kovathulaa irupaa nu enaku theriyum but athulaa konja thalli vachutu keelaa irukathu paaru..💖💗🥰💞</p>
+
+    <!-- Custom Audio Control -->
+    <div class="audio-control">
+      <div class="audio-button paused" id="audioButton"></div>
+      <audio id="birthdayAudio">
+        <source src="background_music/perfect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Mella Oru heart tu luptup luptup nu thudikuthu la atha click pannu !</p>
+    </div>
+
+    <!-- Button to load the card page -->
+    <button class="glow-button" onclick="showCardPage()">click pannu di erumma maade</button>
+  </div>
+
+  <!-- Card Page Content -->
+  <div class="container" id="card-page" style="display: none;">
+    <h1>First Unkitaa naa onnu kekkanum:) Sorry 🐼🦋</h1>
+    <img src="img/Pink Simple Love Letter.jpg" alt="love-letter">
+    
+    <button class="glow-button" onclick="showBirthdayPage()">Bday special paakurathuku inga click pannu panni</button>
+  </div>
+
+  <!-- Birthday Page -->
+  <div class="birthday-container" id="birthday-page" style="display: none;">
+    <div class="video-wrapper">
+      <video class="birthday-video" controls>
+        <source src="background_music/Orange and Yellow Animated Confetti Birthday Greeting Instagram Post.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <!-- Love Images Floating Over Video -->
+    <div class="love-images">
+      <img src="img/kavi1.jpeg" alt="Love Image 1" class="floating-image" style="top: 10%; left: 10%;">
+      <!-- <img src="img/kavi4.jpeg" alt="Love Image 2" class="floating-image" style="top: 30%; left: 50%;"> -->
+      <img src="img/kavi3.jpeg" alt="Love Image 3" class="floating-image" style="top: 60%; left: 80%;">
+      <!-- Add more images as needed -->
+    </div>
+    
+    <div class="confetti"></div> <!-- Confetti will be generated here -->
+    <button class="glow-button" onclick="showPreciousPage()">Unna pathii sila visayam click panni paaru dii korangu</button>
+  </div>
+
+  <!-- Precious Images Page -->
+  <div class="container" id="precious-page" style="display: none;">
+    <h1>Precious Moments</h1>
+    <div class="precious-gallery">
+      <div class="precious-item">
+        <div class="precious-content">
+          <img src="img/kavi5.jpeg" alt="Precious Image 1" class="precious-image">
+          <p>Indha pic CBE la irunduu nee varumbothuu eduthathuu,, unna follow panitee CBE varaikum vandhann but unna pakka mudilaa but apo kuda rendu perum text panitee aprom video call panni pesitee poitu irundhomm nee munadii ponaa naa pinadi bus la vandhan,, <span>Super aana moment athuu😀⃢😁</span></p>
+        </div>
+      </div>
+      <div class="precious-item">
+        <div class="precious-content">
+          <img src="img/kavi6.jpeg" alt="Precious Image 2" class="precious-image">
+          <p>Tution padikumbothuu edutha pic idhuu apo nama rendu perukum oruthar oruthar yaarune nu theriyathuu,, Unoda Tution sir "Collector kowsika"nu kupudura maarii naanum unna "Gang Gang Gangster kowsika nu": solluvenn 𐐘👉👈ඞ</p>
+        </div>
+      </div>
+      <div class="precious-item">
+        <div class="precious-content">
+          <img src="img/kavi7.jpeg" alt="Precious Image 3" class="precious-image">
+          <p>First time oruthar oruthar introduce aana aprom un pic ketan apo nee indha pic thaa anupuna... apo tha enakuu oru excitment enkita time spend panni pesura antha ponnu yaaru face ah kaamika maatralee nu nenachan athuparam unna paaka first time vandhan "first time nee enna paakumbothuu nee kudutha expression and shock reaction inum ennaku nyabagam irukuu.....ε(´｡•᎑•`)っ 💕</p>
+        </div>
+      </div>
+      <div class="precious-item">
+        <div class="precious-content">
+          <img src="img/kavi8.jpeg" alt="Precious Image 4" class="precious-image">
+          <p>Un friends oda iruka naala periya aalu nu nenachutu iruka paaruu,, but idhula kuda evloo innocent ah face vachrukaa paaruu ....cute pic uh 😍😍😍😍😍</p>
+        </div>
+      </div>
+      <!-- Add more images and descriptions as needed -->
+    </div>
+    
+    <div class="audio-control">
+      <div class="audio-button" id="audioButtonPrecious"></div>
+      <audio id="preciousAudio">
+        <source src="background_music/remo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    
+    <p>Mella oru heart thudikuthu laa atha click pannu naa unkita onnu sollanumm..!!</p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
